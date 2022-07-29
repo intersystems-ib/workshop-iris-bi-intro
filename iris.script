@@ -1,0 +1,22 @@
+    // unexpire passwords for dev mode
+    zn "%SYS"
+    do ##class(Security.Users).UnExpireUserPasswords("*")
+    do $system.License.Upgrade()
+    do EnableDeepSee^%SYS.cspServer("/csp/user",1)
+
+    // load web application
+    write ##class(Security.Applications).Import("/opt/irisapp/install/webapp-user.xml")
+
+    zn "USER"
+
+    // install webterminal
+    zpm "install webterminal"
+    
+    // load source code
+    do $system.OBJ.LoadDir("/opt/irisapp/src", "ck",,1)
+    do ##class(HoleFoods.Utils).BuildData()
+
+    // install dsw
+    zpm "install dsw"
+
+    halt

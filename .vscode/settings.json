@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "iris.script": "objectscript"
+    },
+    "objectscript.conn": {
+        "active": true,
+        "host": "localhost",
+        "port": 52773,
+        "ns": "USER",
+        "username": "superuser",
+        "password": "SYS"
+    }
+}

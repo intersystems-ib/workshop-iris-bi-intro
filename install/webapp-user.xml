@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationsExport>
+  <Applications>
+    <AutheEnabled>96</AutheEnabled>
+    <AutoCompile>true</AutoCompile>
+    <CookiePath>/csp/user/</CookiePath>
+    <CSPZENEnabled>true</CSPZENEnabled>
+    <CSRFToken>true</CSRFToken>
+    <DeepSeeEnabled>true</DeepSeeEnabled>
+    <Description>User Namespace applications</Description>
+    <Enabled>true</Enabled>
+    <GroupById>%ISCMgtPortal</GroupById>
+    <HyperEvent>0</HyperEvent>
+    <iKnowEnabled>true</iKnowEnabled>
+    <InbndWebServicesEnabled>true</InbndWebServicesEnabled>
+    <IsNameSpaceDefault>true</IsNameSpaceDefault>
+    <LockCSPName>true</LockCSPName>
+    <MatchRoles>
+      <MatchRolesItem>:%DB_USER</MatchRolesItem>
+    </MatchRoles>
+    <Name>/csp/user</Name>
+    <NameSpace>USER</NameSpace>
+    <Path>/usr/irissys/csp/user/</Path>
+    <Recurse>true</Recurse>
+    <RedirectEmptyPath>false</RedirectEmptyPath>
+    <ServeFiles>2</ServeFiles>
+    <ServeFilesTimeout>3600</ServeFilesTimeout>
+    <Timeout>900</Timeout>
+    <TwoFactorEnabled>false</TwoFactorEnabled>
+    <Type>2</Type>
+    <UseCookies>2</UseCookies>
+    <SessionScope>2</SessionScope>
+    <UserCookieScope>2</UserCookieScope>
+    <Version>1</Version>
+  </Applications>
+</ApplicationsExport>
