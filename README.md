@@ -38,7 +38,7 @@ docker-compose up -d
 * Include "Revenue" measure.
 * Click on one cell and get the detailed listing.
 
-## (e). Architect
+## (e). Architect
 * Go back to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp)
 * Go to *Analytics > USER namespace > Architect*.
 * Click Open > *HoleFoods Sales* Cube.
@@ -52,7 +52,7 @@ docker-compose up -d
 select * from HoleFoods.SalesTransaction
 ```
 
-## (f). Add new data and synchronize
+## (f). Add new data and synchronize
 * In a [WebTerminal](http://localhost:52773/terminal/) session, add some new additional rows:
 ```
 do ##class(HoleFoods.Utils).AddData(1000,1,1)
