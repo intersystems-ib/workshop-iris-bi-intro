@@ -66,12 +66,53 @@ do ##class(%DeepSee.Utils).%SynchronizeCube("HoleFoods")
 * Check again in *Analytics > Analyzer* the number of records after the synchronization.
 
 
-TODO:
+# Creating a simple dashboard
+You will create a simple MDX query (pivot table) and then use some widget in a dashboard to represent it.
 
-Add a new query + dashboard
+## (g). Create a pivot table
+* Go to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp) or click on *Menu > Management Portal*. 
+* Go to *Analytics > USER namespace > Analyzer*
+* Select "HoleFoods Sales" Cube.
+* Click "New"
+* Drag & drop "Product Category" into Rows.
+* Drag & drop "Date of Sale" into Columns.
+* Drag & drop "Units Sold" into "Measures"
+* Click "Save"
+  * Folder: Workshop
+  * Pivot Name: "UnitsSoldbyDate"
+  * Category: Workshop
+  * Public: true
+* Go to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp) > Analytics > USER namespace > User Portal
+* Check that your Pivot appears now on "Workshop" section
+* Click on the cover, and figure out how to change the appearance using the book icon.
 
-Business Intelligence REST API
-https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=D2CLIENT_rest_api
+## (h). Create a dashboard from your pivot
+* Go to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp) > Analytics > USER namespace > User Portal
+* Click on the plus icon on the top > Add Dashboard
+  * Folder: Workshop
+  * Dashboard name: UnitsSold
+  * Dashboard title: Units Sold over the years
+  * Category: Workshop
+  * Public: true
+* Click on the left menu
+* Widgets > Add Widget > Stacked bar chart > choose your pivot as data source
+* Change the size of the widget
+* Chart Settings > Colors & style > Caribbean
+* Controls > Add
+  * Location: Widget
+  * Target: *
+  * Action: Apply Filter
+  * Filter: Region
+* Save
 
-Community package: DSW
-http://localhost:52773/dsw/index.html#/USER 
+
+# Business Intelligence REST API
+## (i). Try API using Postman
+Have a look at the [Business Intelligence REST API](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=D2CLIENT_rest_api)
+* In Postman, open [IRISBIRESTAPI.postman_collection.json](./IRISBIRESTAPI.postman_collection.json)
+* Try different requests.
+
+# Community package: DSW
+## (j). Check out DSW package
+* Have a look at the Community Package [DSW](https://openexchange.intersystems.com/package/DeepSeeWeb)
+* Go to http://localhost:52773/dsw/index.html#/USER and see it working with your own dashboard 
