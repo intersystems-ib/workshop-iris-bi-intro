@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: workshop-iris-analytics:iris
+    image: workshop-iris-bi:iris
     container_name: iris
     command: --check-caps false
     ports:
