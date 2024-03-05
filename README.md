@@ -31,6 +31,7 @@ docker-compose up -d
 ## (d). Analyzer
 * Go back to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp) or click on *Menu > Management Portal*. 
 * Go to *Analytics > USER namespace > Analyzer*
+* Cube: "HoleFoods Sales"
 * Drag & drop "Product" into Rows.
 * Drag & drop "Region" into Columns.
 * Drag & drop "Product Name" into "Product Category"
