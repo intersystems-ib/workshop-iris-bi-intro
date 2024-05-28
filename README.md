@@ -3,12 +3,12 @@ Intro to Analytics using InterSystems BI feature in InterSystems IRIS. You can f
 # Setup
 Build image
 ```
-docker-compose build
+docker compose build
 ```
 
 Run container
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 # Overview
