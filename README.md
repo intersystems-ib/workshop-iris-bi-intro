@@ -12,23 +12,23 @@ docker compose up -d
 ```
 
 # Overview
-## (a). Pareto Chart for Product and Category
+## Pareto Chart for Product and Category
 * Go to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp)
 * Go to *Analytics > USER namespace > User Portal*  and open **Pareto Chart for Product and Category** dashboard.
 * Change some filters. Widgets are linked.
 * Go back clicking on **Home** link.
 
-## (b). Drill options
+## Drill options
 * Go to *Analytics > USER namespace > User Portal*  and open **Drill options** dashboard.
 * Drill-down through data.
 * Go back clicking on **Home** link.
 
-## (c). Date filter demo
+## Date filter demo
 * Go to *Analytics > USER namespace > User Portal*  and open **Date filter demo** dashboard.
 * Change filters and chart type.
 * Click on *Show detail listing* button to list the actual fact tables that have been computed for a cell value.
 
-## (d). Analyzer
+## Analyzer
 * Go back to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp) or click on *Menu > Management Portal*. 
 * Go to *Analytics > USER namespace > Analyzer*
 * Cube: "HoleFoods Sales"
@@ -39,7 +39,7 @@ docker compose up -d
 * Include "Revenue" measure.
 * Click on one cell and get the detailed listing.
 
-## (e). Architect
+## Architect
 * Go back to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp)
 * Go to *Analytics > USER namespace > Architect*.
 * Click Open > *HoleFoods Sales* Cube.
@@ -53,7 +53,7 @@ docker compose up -d
 select * from HoleFoods.SalesTransaction
 ```
 
-## (f). Add new data and synchronize
+## Add new data and synchronize
 * In a [WebTerminal](http://localhost:52773/terminal/) session, add some new additional rows:
 ```
 do ##class(HoleFoods.Utils).AddData(1000,1,1)
@@ -70,7 +70,7 @@ do ##class(%DeepSee.Utils).%SynchronizeCube("HoleFoods")
 # Creating a simple dashboard
 You will create a simple MDX query (pivot table) and then use some widget in a dashboard to represent it.
 
-## (g). Create a pivot table
+## Create a pivot table
 * Go to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp) or click on *Menu > Management Portal*. 
 * Go to *Analytics > USER namespace > Analyzer*
 * Select "HoleFoods Sales" Cube.
@@ -87,7 +87,7 @@ You will create a simple MDX query (pivot table) and then use some widget in a d
 * Check that your Pivot appears now on "Workshop" section
 * Click on the cover, and figure out how to change the appearance using the book icon.
 
-## (h). Create a dashboard from your pivot
+## Create a dashboard from your pivot
 * Go to [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp) > Analytics > USER namespace > User Portal
 * Click on the plus icon on the top > Add Dashboard
   * Folder: Workshop
@@ -108,13 +108,13 @@ You will create a simple MDX query (pivot table) and then use some widget in a d
 
 
 # Business Intelligence REST API
-## (i). Try API using Postman
+## Try API using Postman
 Have a look at the [Business Intelligence REST API](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=D2CLIENT_rest_api)
 * In Postman, open [IRISBIRESTAPI.postman_collection.json](./IRISBIRESTAPI.postman_collection.json)
 * Try different requests.
 
 # Community package: DSW
-## (j). Check out DSW package
+## Check out DSW package
 * Have a look at the Community Package [DSW](https://openexchange.intersystems.com/package/DeepSeeWeb)
 * Go to http://localhost:52773/dsw/index.html#/USER and see it working with your own dashboard 
 
