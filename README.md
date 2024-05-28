@@ -1,4 +1,4 @@
-Intro to Analytics using InterSystems BI feature in InterSystems IRIS. You can find more information in the [documentation](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=PAGE_bi)
+Intro to Analytics using InterSystems BI feature in InterSystems IRIS. You can find more information in the [documentation](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=PAGE_bi)
 
 # Setup
 Build image
@@ -117,3 +117,12 @@ Have a look at the [Business Intelligence REST API](https://docs.intersystems.co
 ## (j). Check out DSW package
 * Have a look at the Community Package [DSW](https://openexchange.intersystems.com/package/DeepSeeWeb)
 * Go to http://localhost:52773/dsw/index.html#/USER and see it working with your own dashboard 
+
+<img src="img/iris-bi-dsw.gif" width="1024" />
+
+# Power BI
+You can also use [InterSystems IRIS Connector for Power BI](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=APOWER).
+
+If you have Power BI, have a look at the docs and  try the sample [HoleFoodsSales.pbix](./HoleFoodsSales.pbix)
+
+<img src="img/iris-bi-powerbi.gif" width="1024" />
